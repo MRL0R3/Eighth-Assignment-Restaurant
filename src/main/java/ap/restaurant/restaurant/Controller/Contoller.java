@@ -1,9 +1,9 @@
-package ap.restaurant.restaurant;
+package ap.restaurant.restaurant.Cotroller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class Contoller {
     @FXML
     private Label welcomeText;
 
