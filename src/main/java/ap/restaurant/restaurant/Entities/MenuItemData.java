@@ -1,4 +1,4 @@
-package ap.restaurant.restaurant.Model;
+package ap.restaurant.restaurant.Entities;
 
 public class MenuItemData {
     public int id;

@@ -1,7 +1,7 @@
 package ap.restaurant.restaurant.Database;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+        import java.sql.Connection;
+        import java.sql.DriverManager;
 
 public class DatabaseManager {
     private static final String URL = "jdbc:postgresql://localhost:5432/restaurant";

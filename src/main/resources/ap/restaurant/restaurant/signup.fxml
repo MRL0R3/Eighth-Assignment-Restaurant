@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ap.restaurant.restaurant.Signup"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ap.restaurant.restaurant.Controller.LoginSignupController"
+            stylesheets="@stl.css">
 
+    <VBox alignment="CENTER" spacing="16.0" AnchorPane.topAnchor="40" AnchorPane.bottomAnchor="40" AnchorPane.leftAnchor="40" AnchorPane.rightAnchor="40">
+
+        <Label text="Create Account 📝" styleClass="title-label"/>
+
+        <TextField fx:id="newUsernameField" promptText="Choose a Username"/>
+        <PasswordField fx:id="newPasswordField" promptText="Enter Password"/>
+        <Label fx:id="strengthLabel" text="" style="-fx-text-fill: gray;"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"/>
+
+
+        <Label fx:id="signupErrorLabel" text="" textFill="red" visible="false"/>
+
+        <Button fx:id="signupButton" text="Sign Up" onAction="#handleSignup"/>
+        <Hyperlink text="Back to Login" onAction="#goToLogin"/>
+        <Hyperlink text="Already have an account? Log In" onAction="#goToLogin"/>
+    </VBox>
 </AnchorPane>
